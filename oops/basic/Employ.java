@@ -1,4 +1,4 @@
-package oops;
+package oops.basic;
 public class Employ {
     static String companyName = "ABC";
     int empId;

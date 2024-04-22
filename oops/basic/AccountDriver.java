@@ -1,4 +1,4 @@
-package oops;
+package oops.basic;
 
 public class AccountDriver {
      static int a= 10;

@@ -1,4 +1,4 @@
-package oops;
+package oops.basic;
 
 public class EmployDriver{
     public static void main(String[] args){
