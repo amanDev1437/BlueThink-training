@@ -11,7 +11,6 @@ public class Atm {
 
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
-            
 
             switch (choice) {
                 case 1:
@@ -20,17 +19,17 @@ public class Atm {
                 case 2:
                     System.out.println("Enter the amount:");
                     int amount = sc.nextInt();
-                    if(amount<balance){
-                        balance = balance-amount;
-                        System.out.println("Collect your money");
-                    }else{
+                    if (amount < balance) {
+                        balance = balance - amount;
+                        System.out.println("Please Collect your money");
+                    } else {
                         System.out.println("Insufficient balance");
                     }
                     break;
                 case 3:
                     System.out.println("Enter the amount to be deposited");
                     int deposit = sc.nextInt();
-                    balance = balance+deposit;
+                    balance = balance + deposit;
                     System.out.println("Money deposited successfully");
                     break;
                 case 4:
@@ -39,9 +38,9 @@ public class Atm {
                 default:
                     System.out.println("Enter valid choice");
                     break;
-            } 
-            sc.close(); 
+            }
+
         }
-        
+
     }
 }

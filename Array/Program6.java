@@ -13,6 +13,7 @@ public class Program6 {
                 break;
             }
         }
+        sc.close();
 
     }
 
