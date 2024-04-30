@@ -11,6 +11,7 @@ public class Atm {
 
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
+            sc.close();
 
             switch (choice) {
                 case 1:

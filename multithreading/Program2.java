@@ -18,8 +18,8 @@ class B implements Runnable {
 
 public class Program2 {
     public static void main(String[] args) {
-        Runnable obj1 = new A();
-        Runnable obj2 = new B();
+        A obj1 = new A();
+        B obj2 = new B();
 
         Thread t1 = new Thread(obj1);
         Thread t2 = new Thread(obj2);

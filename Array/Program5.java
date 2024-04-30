@@ -1,5 +1,5 @@
 //sort array in ascending order
-public class Program5 {
+class Program5 {
     public static void main(String[] args) {
         int[] arr = { 5, 4, 3, 2, 1, 10, 9, 18 };
         int temp = 0;

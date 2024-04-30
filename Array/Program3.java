@@ -1,6 +1,6 @@
 //largest element in given array
 
-public class Program3 {
+class Program3 {
     public static void main(String[] args) {
         int[] arr = { 5, 4, 6, 8, 9, 10, 147, 999, 3 };
         int max = arr[0];

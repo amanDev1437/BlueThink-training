@@ -1,6 +1,6 @@
 //copy and reverse of an array
 
-public class Program1 {
+class Program1 {
     public static void main(String[] args) {
         int[] arr = new int[] { 1, 2, 3, 4 };
         int[] copy_arr = new int[arr.length];

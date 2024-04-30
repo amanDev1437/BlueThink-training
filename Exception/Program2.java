@@ -6,6 +6,7 @@ class Program2 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int j = 10;
+        sc.close();
         try {
             int result = j / n;
             System.out.println(result);

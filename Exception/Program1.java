@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class Program1 {
+class Program1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.close();
         int a = 10;
         try {
             int result = a / n;
