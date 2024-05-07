@@ -5,6 +5,7 @@ class Student implements Comparable<Student>{
     String name;
     int age;
     int marks;
+
     Student(String name, int age, int marks){
         this.name = name;
         this.age = age;
@@ -12,6 +13,7 @@ class Student implements Comparable<Student>{
     }
 
     public int compareTo(Student s){
+
         return this.age - s.age;
     }
 
@@ -19,7 +21,7 @@ class Student implements Comparable<Student>{
 
 public class ComparableDemo {
     public static void main(String[] args) {
-        ArrayList <Student> s1 = new ArrayList<Student>();
+        ArrayList <Student> s1 = new ArrayList<>();
         s1.add(new Student("Aman",22,98));
         s1.add(new Student("Ashish",18,76));
         s1.add(new Student("Saksham",16,33));

@@ -2,29 +2,39 @@ package collectionFramework;
 
 import java.util.*;
 
+class Employee {
+    int id;
+    String name;
+    int age;
+    double salary;
 
+    Employee(int id, String name, int age, double salary){
+        this.id =id;
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+}
 public class ArrayListDemo {
     public static void main(String[] args) {
-        ArrayList <Integer> a1 = new ArrayList<>();
+        ArrayList <Employee> a1 = new ArrayList<>();
 
-        a1.add(100);
-        a1.add(200);
-        a1.add(300);
-        a1.add(400);
+        a1.add(new Employee(101,"aman",22,5));
+        a1.add(new Employee(102,"Saksham",16,4));
 
-        for(Integer num:a1){
-            System.out.println(num);
+        for(Employee e: a1){
+            System.out.println(e.id+" "+e.name);
         }
-        System.out.println(a1.get(2));
-        a1.set(1,1000);
-        System.out.println(a1);
 
-        Collections.sort(a1);
-        Iterator<Integer> it = a1.iterator();
 
-        while(it.hasNext()){
-            System.out.println(it.next());
-        }
+
+
+
+
+
+
+
+
 
 
     }
