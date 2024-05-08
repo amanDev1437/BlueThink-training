@@ -30,5 +30,7 @@ public class LinkedListDemo {
         }else{
             System.out.println("Elements not found");
         }
+
+        l1.forEach(num -> System.out.println(num));
     }
 }
