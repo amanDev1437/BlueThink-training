@@ -2,6 +2,7 @@ package java8Features;
 
 import java.util.ArrayList;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 class Product{
@@ -39,7 +40,7 @@ public class StreamExample {
         float totalPrice = list.stream().map(p->p.price)
                                         .reduce(0f,(sum,price)->sum+price);
 
-        System.out.println(totalPrice);
+        System.out.println("Total price:"+totalPrice);
 
         //max price
         Product a = list.stream().max((p1,p2)->p1.price>p2.price ? 1 : -1).get();
@@ -54,5 +55,18 @@ public class StreamExample {
 
         int count = (int)list.stream().filter(product -> product.price<30000f).count();
         System.out.println(count);
+
+        long collectorsCount = list.stream().collect(Collectors.counting());
+
+        System.out.println("Total no. of product:"+collectorsCount);
+
+        double aveargePrice = list.stream().collect(Collectors.averagingDouble(p->p.price));
+
+        System.out.println("Average price:"+aveargePrice);
+
+        double totalPriceUsingColl = list.stream().collect(Collectors.summingDouble(p->p.price));
+        System.out.println("Total price using collectors:"+totalPriceUsingColl);
+
+
     }
 }
