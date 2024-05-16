@@ -9,6 +9,5 @@ public class FileWriterExample {
         fw.write("Welcome to File handling");
         fw.flush();
         fw.close();
-
     }
 }
