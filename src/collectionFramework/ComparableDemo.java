@@ -26,6 +26,12 @@ public class ComparableDemo {
         s1.add(new Student("Ashish",18,76));
         s1.add(new Student("Saksham",16,33));
 
+        ArrayList <Student> s2 = new ArrayList<>();
+
+        s1.add(new Student("Aman",22,98));
+        s1.add(new Student("Ashish",18,76));
+        s1.add(new Student("Saksham",16,33));
+
         Collections.sort(s1);
 
         for(Student s:s1){
